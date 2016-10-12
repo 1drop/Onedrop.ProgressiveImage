@@ -1,0 +1,14 @@
+{
+    "name": "onedrop/progressiveimage",
+    "description": "Overrides ImageThumbnailGenerator and adjusts all images to progressive",
+    "license": "LGPL-3.0+",
+    "type": "typo3-flow-package",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Onedrop\\ProgressiveImage": "Classes/"
+        }
+    }
+}

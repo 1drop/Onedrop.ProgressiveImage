@@ -1,0 +1,5 @@
+TYPO3:
+  Media:
+    thumbnailGenerators:
+      'TYPO3\Media\Domain\Model\ThumbnailGenerator\ImageThumbnailGenerator':
+        disable: true
