@@ -8,4 +8,6 @@ always generate progressive images (interlace plane).
 ### Install: 
 
 Use the command ``composer require onedrop/progressiveimage`` to add this package as a 
-requirement to your Flow/Neos project.  
+requirement to your Flow/Neos project. 
+
+Run ``flow media:clearthumbnails`` to re-generate existing images progressively.
