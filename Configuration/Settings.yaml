@@ -1,5 +1,6 @@
-TYPO3:
+
+Neos:
   Media:
     thumbnailGenerators:
-      'TYPO3\Media\Domain\Model\ThumbnailGenerator\ImageThumbnailGenerator':
+      Neos\Media\Domain\Model\ThumbnailGenerator\ImageThumbnailGenerator:
         disable: true

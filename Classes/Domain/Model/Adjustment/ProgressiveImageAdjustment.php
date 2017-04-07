@@ -1,10 +1,9 @@
 <?php
 namespace Onedrop\ProgressiveImage\Domain\Model\Adjustment;
 
-use Doctrine\ORM\Mapping as ORM;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use Imagine\Image\ImageInterface;
-use TYPO3\Media\Domain\Model\Adjustment\AbstractImageAdjustment;
+use Neos\Media\Domain\Model\Adjustment\AbstractImageAdjustment;
 
 /**
  * An adjustment for quality of an image
@@ -14,14 +13,14 @@ use TYPO3\Media\Domain\Model\Adjustment\AbstractImageAdjustment;
 class ProgressiveImageAdjustment extends AbstractImageAdjustment
 {
     /**
-     * @var integer
+     * @var int
      */
     protected $position = 40;
 
     /**
      * Applies this adjustment to the given Imagine Image object
      *
-     * @param ImageInterface $image
+     * @param  ImageInterface $image
      * @return ImageInterface
      */
     public function applyToImage(ImageInterface $image)
@@ -32,8 +31,8 @@ class ProgressiveImageAdjustment extends AbstractImageAdjustment
     /**
      * Check if this Adjustment can or should be applied to its ImageVariant.
      *
-     * @param ImageInterface $image
-     * @return boolean
+     * @param  ImageInterface $image
+     * @return bool
      */
     public function canBeApplied(ImageInterface $image)
     {

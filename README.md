@@ -1,7 +1,15 @@
 # Onedrop.ProgressiveImage
 
-This package overrides the default behavior of the `ImageThumbnailGenerator` of `TYPO3.Media` to 
+This package overrides the default behavior of the `ImageThumbnailGenerator` of `Neos.Media` to 
 always generate progressive images (interlace plane).
+
+
+## Compatibility
+
+| Neos Version     | Onedrop.ProgressiveImage Version  |
+|------------------|-----------------------------------|
+| Neos 3.x         | 2.x                               |
+| Neos 2.3 LTS     | 1.x                               |
 
 ## How-To:
 
