@@ -4,7 +4,7 @@
     "license": "LGPL-3.0+",
     "type": "neos-package",
     "require": {
-        "neos/flow": "^4.0"
+        "neos/flow": "^5.0"
     },
     "autoload": {
         "psr-4": {
@@ -87,7 +87,8 @@
             "Neos.Seo-20170127154600",
             "Neos.Flow-20170127183102",
             "Neos.Fusion-20180211175500",
-            "Neos.Fusion-20180211184832"
+            "Neos.Fusion-20180211184832",
+            "Neos.Flow-20180415105700"
         ]
     }
 }
