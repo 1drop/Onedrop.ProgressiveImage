@@ -1,5 +1,4 @@
 <?php
-
 namespace Onedrop\ProgressiveImage\Domain\Model\ThumbnailGenerator;
 
 use Onedrop\ProgressiveImage\Domain\Model\Adjustment\ProgressiveImageAdjustment;
@@ -10,7 +9,6 @@ use Neos\Media\Exception\NoThumbnailAvailableException;
 
 class ProgressiveImageThumbnailGenerator extends ImageThumbnailGenerator
 {
-
     /**
      * @param Thumbnail $thumbnail
      *
@@ -41,9 +39,11 @@ class ProgressiveImageThumbnailGenerator extends ImageThumbnailGenerator
             $thumbnail->setWidth($processedImageInfo['width']);
             $thumbnail->setHeight($processedImageInfo['height']);
         } catch (\Exception $exception) {
-            $message = sprintf('Unable to generate thumbnail for the given image (filename: %s, SHA1: %s)',
+            $message = sprintf(
+                'Unable to generate thumbnail for the given image (filename: %s, SHA1: %s)',
                 $thumbnail->getOriginalAsset()->getResource()->getFilename(),
-                $thumbnail->getOriginalAsset()->getResource()->getSha1());
+                $thumbnail->getOriginalAsset()->getResource()->getSha1()
+            );
             throw new NoThumbnailAvailableException($message, 1433109654, $exception);
         }
     }
