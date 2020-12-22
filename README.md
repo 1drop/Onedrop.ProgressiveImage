@@ -8,7 +8,7 @@ always generate progressive images (interlace plane).
 
 | Neos Version     | Onedrop.ProgressiveImage Version  |
 |------------------|-----------------------------------|
-| Neos 4.x         | 3.x                               |
+| Neos 4.x, 5.x    | 3.x                               |
 | Neos 3.x         | 2.x                               |
 | Neos 2.3 LTS     | 1.x                               |
 
